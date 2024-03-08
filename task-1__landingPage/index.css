@@ -1,0 +1,310 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+#logo
+{
+    height :50px;
+}
+:root
+{
+    --fstcol:#030303;
+    --font:white;
+    --maincolor:#fac12f;
+    --top:#272830;
+
+}
+body{
+    background-color:var(--fstcol) ;
+}
+#top
+{
+    position: absolute;
+    top:0;
+    width:100%;
+    background-color:var(--top);
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+  }
+li,a{
+    display:inline-flex;
+    font-size: 25px;
+    margin-right:20px;
+  font-family: sans-serif;
+  color: var(--font);
+  text-decoration: none;
+  text-align: center;
+   justify-content: space-between;
+}
+li :hover{
+    color:var(--maincolor);
+    text-decoration: underline;
+}
+#body h1
+{
+    color:var(--font);
+    font-size:85px;
+    font-weight: 600;
+    position: absolute;
+    top:20%;
+    left:2%;
+    font-family: sans-serif;
+
+}
+#role
+{
+    border-radius: 10px;
+    background-color: var(--top);
+    position: absolute;
+    padding-right: 5px;
+    padding-left: 5px;
+    top: 13%;
+    left:2%;
+    font-size: 30px;
+  
+}
+#buttons
+{
+  background-color: var(--maincolor);
+  border: 10px;
+  border-radius: 10px;
+  border-color: white;
+  position:absolute;
+  top:80%;
+  left:60%;
+}
+#main
+{
+    position: absolute;
+    top:10%;
+    left:55%;
+    width: 40%;
+    height:70%;
+}
+#buttons a
+{
+    padding: 10px;
+}
+#button2
+{
+    background-color: var(--top);
+    border-radius: 10px;
+    border: 30px wheat;
+    position:absolute;
+    top:80%;
+    left:80%;
+
+}
+#buttons:hover
+{
+    
+}
+#button2 a
+{
+    padding: 10px;
+
+}
+#links
+{
+    position:absolute;
+    width: 30%;
+    height:50px;
+    top: 90%;
+    left:2%;
+    display: inline-flex;
+    background-color:transparent;
+    justify-content:left;
+
+}
+#role h2
+{
+    color: var(--font);
+}
+nav
+{
+    left:10%;
+    justify-content:space-around;
+    text-align: center;
+    position: absolute;
+    top:10px;
+    left:26%;
+    margin-left: 19%;
+    float: right;
+    flex-direction: right;
+   
+}
+#body h1 span{
+    color:#fac12f;
+}
+p
+{
+    position: absolute;
+    top:35%;
+    left: 2%;
+    font-size: 30px;
+    font-family: sans-serif;
+  color:var(--font);
+  width:50%;
+}
+
+@media  screen and (max-width:1025px) {
+    #top
+    {
+        height:80px;
+         width:100%
+    }
+    nav
+    {
+       
+        top:100%;
+        width:52%;
+        display:none;
+        left:50%;
+        background-color: var(--maincolor);
+        justify-content: space-between;
+        padding:3%;
+        z-index: 1;
+    }
+    li a
+    {
+        justify-content: space-between;
+        margin:20px;
+    }
+    p{
+     width:100%;
+     font-size: 29px;
+     top:25%;
+    }
+    #role
+    {
+        top:10%;
+    }
+    #body h1
+    {
+        top:15%;
+    }
+    
+    #buttons
+    {
+       
+        left:10%;
+        top:87%;
+    }
+    #button2
+    {
+        left:65%;
+        top:87%;
+    }
+    #main
+    {
+        top:55%;
+        left:15%;
+        width:60%;
+        height:30%;
+    }
+    #links
+    {
+        top:95%;
+        left:30%;
+    }
+    #burger div
+    {
+        width:50px;
+       height:8px;
+       margin:10px 0;
+       background-color: var(--maincolor);
+       justify-content: space-around;
+    }
+    .nav-show
+    {
+        display:inline-block;
+      
+    }
+   
+}
+@media  screen and (max-width:450px) {
+    #top
+    {
+        height:70px;
+        width:100%;
+    }
+    nav
+    {
+        top:100%;
+        width:54%;
+        left:46%;
+        display: none;
+        background-color: var(--maincolor);
+        border-radius: 9px;
+        justify-content: space-between;
+        padding: 3%;
+        z-index: 1;
+    }
+    li a
+    {
+        margin:15px;
+    }
+    
+    p{
+     width:100%;
+     font-size: 20px;
+     top:27%;
+     
+    }
+    #role
+    {
+        top:11%;
+        width: 80%;
+        font-size: 20px;
+        justify-content: center;
+    }
+    #body h1
+    {
+        top:16%;
+        font-size: 400%;
+    }
+    
+    #buttons, #button2
+    {
+       
+        left:5%;
+        top:96%;
+        width:200px;
+        
+    }
+    #buttons a,#button2 a{
+        font-size: 100%;
+    }
+    #button2
+    {
+        left:55%;
+        width:100px;
+       margin-left:  36px;
+    }
+    #main
+    {
+        top:66%;
+        left:20%;
+        width:60%;
+        height:30%;
+    }
+    #links
+    {   top:103%;
+        left:25%;
+    }
+    #burger div
+    {
+        width:50px;
+       height:8px;
+       margin:10px 0;
+       background-color: var(--maincolor);
+       justify-content: space-around;
+    }
+    .nav-show{
+        display: inline-block;
+    }
+
+}
