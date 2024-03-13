@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>not</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="header">
+          <h1>TO DO LIST <img  src = "assets/todo-logo.png"></h1>
+          <div class="row">
+            <input id="textCon"  placeholder="Enter a task to do">
+            <button id="addBut" onclick="addTask()"> ADD </button>
+          </div>
+            </div>
+            <div class="bodyofapp">
+       <ul id="tasks">
+       
+       </ul>
+            </div>
+            
+            <div class="bottom">
+            
+            <button onclick="clearAll()">Clear</button>
+            <h1 >No of tasks:<span id="notasks"></span></h1>
+            <h1 >No of tasks Completed:<span id="completedtasks"></span></h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
